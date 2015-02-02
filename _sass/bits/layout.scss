@@ -1,0 +1,27 @@
+$susy: (
+    columns: 12,
+    gutters: 1/1
+);
+
+   
+    
+.container {
+    padding: 100px 25px;
+    @include clearfix;
+/*    overflow: auto;
+    clear: right; */
+}
+.page-header, .page-footer {
+    background-color: #efefef;
+    text-align: center;
+}
+.block {
+    padding-bottom: 25px;
+}
+.foot-nav .col {
+    @include span(4)
+}
+    .foot-nav .col:nth-child(3) {
+        margin-right: 0;
+    }
+    

@@ -1,0 +1,35 @@
+@mixin font-size($pixels) {
+    font-size: $pixels + px;
+    font-size: ( $pixels / $base-font-size ) + rem;
+}
+
+/* @group #Box grid */
+/*--------------------------------------------------------------
+Box grid
+--------------------------------------------------------------*/
+.box {
+    margin-bottom: 25px;
+    @include clearfix;
+}
+    .box-inner {
+        padding: 15px;
+        @include clearfix;
+    }
+    .box:hover {
+        background: #fff;
+        text-decoration: none;
+    } 
+    
+    
+@include breakpoint (640px) {
+    .box {
+        @include span (6 of 12);
+    }
+}
+@include breakpoint (1200px) {
+    .box {
+        @include span (4 of 12);
+    }
+}
+
+/* @end Box grid */

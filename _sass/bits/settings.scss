@@ -1,0 +1,45 @@
+/* @group Breakpoints */
+$sm: 480px;
+$md: 690px;
+$lg: 990px;
+$lgx: 1200px;
+// /* @end */
+
+/* @group Colours */
+$light: #EDECEB;
+$mid: #9A9590;
+$deep: #363332;
+$jazzberry: #A0236F;
+$turquoise: #217FA2;
+$shaded: #efefef; 	// Pale grey 
+$magic: #207EAA; 	// Blue 
+$fog: #D7E2E8; 		// Pale blue 
+$mist: #E5EDF0; 	// Palest blue 
+$g0: #f2f2f2;
+$g05: #efefef;
+$g10: #eee;
+$g70: #383838;
+
+/* @group Functions */
+$bg: $light;
+$text: $mid;
+$links: $turquoise;
+$accent: $jazzberry;
+/* @end */
+
+$base-font-size: 16;
+/* @end */
+
+.serif {
+    font-family: 'Merriweather', serif;
+}
+.sans {
+    font-family: 'Open Sans', sans-serif;   
+    font-weight: 300; 
+}
+.script {
+    font-family: 'Bickham Script Pro', script;
+}
+.text {
+    color: #333;
+}

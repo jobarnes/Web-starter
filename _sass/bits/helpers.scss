@@ -1,0 +1,86 @@
+// See: Helper classes @ http://www.sitepoint.com/using-helper-classes-dry-scale-css
+
+// Spacing
+// Position and z-index
+// Alignment
+// Typography
+// Colours
+
+
+
+/* @group #Space */
+/*--------------------------------------------------------------
+Margins and padding
+--------------------------------------------------------------*/
+
+$base-space-unit: 1em;
+
+// Compact margins
+.m0     { margin:         0 }
+.mt0    { margin-top:     0 }
+.mr0    { margin-right:   0 }
+.mb0    { margin-bottom:  0 }
+.ml0    { margin-left:    0 }
+
+// Compact padding
+.p0     { padding:		  0 }
+.pt0    { padding-top:    0 }
+.pr0    { padding-right:  0 }
+.pb0    { padding-bottom: 0 }
+.pl0    { padding-left:   0 }
+ 
+// Extra top margin
+.mtd4   { margin-top: $base-space-unit / 4; }
+.mtd2   { margin-top: $base-space-unit / 2; }
+.mt1    { margin-top: $base-space-unit; }
+.mt2    { margin-top: $base-space-unit * 2; }
+ 
+// Extra top padding
+.ptd4   { padding-top: $base-space-unit / 4; }
+.ptd2   { padding-top: $base-space-unit / 2; }
+.pt1    { padding-top: $base-space-unit; }
+.pt2    { padding-top: $base-space-unit * 2; }
+
+
+/* @group #Position */
+/*--------------------------------------------------------------
+Position and z-index
+--------------------------------------------------------------*/
+.fit          { max-width: 100%; }
+.half-width   { width: 50%; }
+.full-width   { width: 100%; }
+.full-height  { height: 100%; }
+
+.fixed        { position: fixed; }
+.relative     { position: relative; }
+.absolute     { position: absolute; }
+.static       { position: static; }
+ 
+.zindex-1     { z-index: 1; }
+.zindex-2     { z-index: 2; }
+.zindex-3     { z-index: 3; }
+ 
+.pin-top-right {
+    top: 0;
+    right: 0;
+}
+
+.pin-bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+
+/* @group #Alignment */
+/*--------------------------------------------------------------
+Alignment
+--------------------------------------------------------------*/
+
+.text-left    { text-align: left; }
+.text-right   { text-align: right; }
+.text-center  { text-align: center; }
+.text-just    { text-align: justify; }
+ 
+.align-top    { vertical-align: top; }
+.align-bottom { vertical-align: bottom; }
+.align-middle { vertical-align: middle; }

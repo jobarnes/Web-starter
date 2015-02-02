@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+* Typography
+* Elements
+* Forms
+* Navigation
+	* Links
+	* Menus
+* Alignments
+* Clearings
+--------------------------------------------------------------*/
+
+
+/* @group #Typography */
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+html, body {
+    height: 100%;
+}
+::selection {
+    color: #fff;
+    background-color: #931669;
+}
+::-moz-selection {
+    color: #fff;
+    background-color: #931669;
+}

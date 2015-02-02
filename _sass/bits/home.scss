@@ -1,0 +1,301 @@
+/* @group #PAGE-HEADER */
+.page-header {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+.page-header .container {
+    padding: 0;
+}
+.brand {
+    display: block;
+    text-align: center;
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+.site-title, .tagline {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 20px 0;
+}
+.site-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-right: 25px;
+    font-weight: bold;
+    color: #666;
+}
+.site-logo {
+    display: block;
+    text-align: center;
+}
+.site-logo img {
+    padding-top: 25px;
+}
+.site-nav {
+    margin-top: 60px;
+    margin-right: 0px;
+}
+.site-nav li {
+    border-right:   1px solid #ddd;
+    border-top:     1px solid #ddd;
+    width: 25%;
+    float: left;
+    padding-bottom: 0;
+    @include box-sizing(border-box);
+}
+.site-nav li a {
+    color: #666;
+    font-weight: bold;
+    background-color: #eee;
+    display: block;
+    padding: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.site-nav li a:hover, .brand:hover  {
+    color: #fff;
+    background-color: #207EAA;
+    text-decoration: none;
+}
+@include breakpoint(768px) {
+.page-header, .page-footer {
+    text-align: left;
+}
+}
+@include breakpoint(1200px) {
+.container {
+    @include container (1200px);
+}
+.page-header .container {
+   overflow: visible;
+    }
+.site-logo {
+    @include span(1);
+    text-align: center;
+    padding-left: 25px;
+}
+.site-logo img {
+    height: 50px;
+    padding-top: 5px;
+}
+.brand {
+    @include span(5);
+    text-align: left;
+}
+.site-nav {
+    @include span(5 at 9);
+    float: right;
+    margin-top: 0;
+    margin-right: 0;
+}
+.last {
+    margin-right: 0;
+}
+}
+/* @end Page-Header */
+
+/* @group Welcome */
+.welcome {
+    text-align: center;
+}
+.hello h2 {    
+    font-family: 'Bickham Script Pro', script;
+    font-size: 120px;   
+    padding-bottom: 0.3em;
+}
+.intro {
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    margin: 0 auto;
+    @include breakpoint($md) {
+       width: 80%;
+    }
+    @include breakpoint($lg) {
+        width: 60%;
+    }
+}
+/* @end Welcome */
+
+.hero .container {
+    padding: 0; 
+    @include breakpoint($lg) {
+        padding: 0 25px;
+    }
+}
+
+.services {
+    background-color: #efefef;
+    margin-top: 60px;
+    text-align: center; /* centers section heading */
+}
+.services h1 {
+    background-color: #efefef;
+}
+.services h2 {
+    @extend .sans;
+    @include font-size(22);    
+    margin-bottom: 0.3em;
+}
+.services .box-inner {
+    @include clearfix;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    @include breakpoint($sm) {
+        border-bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+/* .services .box h2, .services .box li {
+    text-align: left;
+}*/
+
+.work h1, .work.backdrop {
+    background-color: #E1E9ED;
+} 
+.work h2 {
+    font-family: sans-serif;
+    padding: 10px 0 2px 0;
+}
+.work .box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.work .box:hover {
+    background-color: #eee;
+}
+
+
+@include breakpoint (640px) {
+    .services .box {
+        min-height: 170px;
+    }
+    .services a:nth-child(2n), .work li:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+@include breakpoint (1200px) {
+    .services a:nth-child(3n), .work li:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+    
+
+.study {
+     h1 {
+        background-color: #fff;
+    }
+    .box {
+    @include breakpoint ($md) {
+        @include span (3);
+        text-align: left;
+        line-height: 1.8em;
+        min-height: 200px;
+    }
+    h2 {
+       @extend .sans;
+       @include font-size(18);
+       color: $turquoise;
+       line-height: 1.2em;
+    }
+    p {
+        @include font-size(14);
+        b { 
+        font-weight: bold;
+        color: #888;
+        display: inline-block;
+        width: 6em;
+        }   
+    }
+}
+}
+.study .box:nth-child(4n) {
+    margin-right: 0;
+}
+.section-summary {
+    text-transform: uppercase;
+    margin: 1em 0 4em;
+}
+
+    
+    
+.page-footer {
+    @include clearfix;
+    background-color: #efefef;
+}
+.page-footer span {
+    @extend .text;
+    @extend .sans;
+}
+.contact.block {
+    background-color: #fff;
+    padding: 10px 0;
+}
+.contact.block a {
+    font: sans-serif;
+    :hover {
+        text-decoration: underline;
+    }
+}
+.page-footer .vcard {
+    text-align: center;
+    padding: 10px 0;
+    @include font-size(16);
+    @extend .sans;
+    color: #000;
+    @include breakpoint ($md) {
+        @include span(9); 
+        text-align: left;  
+    }
+}
+.contact .vcard span {
+    display: inline-block;
+    margin-right: 30px;
+    padding-left: 7px;
+}
+.vcard li {
+    @include breakpoint($lg) {
+        @include inline-list;
+    }
+}
+.social-media {
+    @include clearfix;
+    text-align: center;
+    @include breakpoint($md) {
+        text-align: left;
+    }
+        ul {
+            margin-top: 5px;
+            @include breakpoint($md) {
+            float: right; }
+        }
+        .fa {
+            color: #999;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .fa:hover {
+            text-decoration: none;
+        }
+        .fa-linkedin-square:hover {
+            color: #1C87BD;
+        }
+        .fa-twitter-square:hover {
+            color: #00ACED;
+        }
+        .fa-behance-square:hover {
+            color: #000000;
+        }
+    span { 
+        @include font-size(16);
+        color: #666;
+        position: relative;
+        bottom: 5px;
+        display: none;
+    }
+    @include breakpoint ($md) {
+        @include span(3 last);
+    }
+}
