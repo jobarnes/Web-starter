@@ -31,3 +31,13 @@ dwsync.xml
  
 # Exclude fonts
 _fonts/ 
+
+# Exclude NetBeans files
+nbproject/
+
+# Other
+node_modules
+.npm-debug.log
+tmp
+.sass-cache
+*.css.map
